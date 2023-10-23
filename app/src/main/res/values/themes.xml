@@ -12,5 +12,22 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="calcDialogStyle">@style/CustomCalcDialogStyle</item>
+    </style>
+
+    <!-- Your calculator dialog theme -->
+    <style name="CustomCalcDialogStyle" parent="CalcDialogStyle">
+        <!-- You can customize the dialog's style here -->
+        <!-- This line changes the dialog's maximum height -->
+        <item name="calcDialogMaxHeight">300dp</item>
+
+        <!-- These lines change the style of operation buttons -->
+        <item name="calcOperationBtnStyle">@style/CustomCalcOperationBtnStyle</item>
+        <item name="calcOperationBtnColor">#000000</item>
+    </style>
+
+    <style name="CustomCalcOperationBtnStyle" parent="CalcOperationBtnStyle">
+        <!-- Don't forget to specify the parent! -->
+        <item name="android:textColor">#ffffff</item>
     </style>
 </resources>
